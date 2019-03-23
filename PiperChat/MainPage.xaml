@@ -7,7 +7,7 @@
       xmlns:hexui="clr-namespace:HexagonUI;assembly=HexagonUI" 
       mc:Ignorable="d"
       
-      Title="MainPage" Background="{StaticResource BackgroundColor}" Loaded="Page_Loaded" Height="462" Width="664" >
+      Title="MainPage" Background="{StaticResource BackgroundColor}" Loaded="Page_Loaded" Height="474" Width="664" >
     <Grid>
         <Grid HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="160">
             <hexui:HButton x:Name="btnStart"  FocusStroke="White"  FocusFill ="#FF8D8D8D" Stroke="White" Height="90" Width="90"  Text="Start PiperChat" FontSize="11" TextForeground="White" Margin="12,143,58,217"  />
@@ -18,10 +18,9 @@
 
             </hexui:HButton>
         </Grid>
-        <Grid HorizontalAlignment="Left"  Margin="160,0,0,0" VerticalAlignment="Stretch" Width="475">
-            <ListView x:Name="listView" HorizontalAlignment="Stretch" Margin="0,0,0,10" Height="402" Style="{StaticResource ListViewWinterStyle}" VerticalAlignment="Stretch">
-
-            </ListView>
+        <Grid HorizontalAlignment="Left"  Margin="160,10,0,0" VerticalAlignment="Stretch" Width="475">
+            <ListView x:Name="listView" HorizontalAlignment="Stretch" Margin="0,0,0,48" Style="{StaticResource ListViewWinterStyle}" VerticalAlignment="Stretch"/>
+            <TextBox x:Name="textBox" Foreground="White" FontFamily="Consolas" FontSize="13" HorizontalAlignment="Stretch" Height="20" Margin="0,420,0,15" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Background="{StaticResource  CustomBackgroundBrush}" BorderBrush="WhiteSmoke" BorderThickness="1" Style="{DynamicResource TextBoxWinterStyle}" CaretBrush="#FFE2E2E2" />
         </Grid>
 
     </Grid>
